@@ -19,7 +19,22 @@ LD      := $(CROSSCOMPILE)ld
 LDFLAGS := -shared -fpic -lrt -lcrypto -L../logger -llogger -L../pm -lpm -L/usr/scu/libs
 
 TOP = ..
-OBJS  = ccr_api.o
+OBJS  = FileProc.o
+OBJS += CollectLogEx.o
+OBJS += Command.o
+OBJS += config.o
+OBJS += Connect.o
+OBJS += CRC_Proc.o
+OBJS += crypto.o
+OBJS += cmgrapi.o
+OBJS += Disconnect.o
+OBJS += DLE_EOT.o
+OBJS += ProperDataDef.o
+OBJS += Prtcl_RS232C_8.o
+OBJS += Prtcl_RS232C_8_FuncDef.o
+OBJS += RS232C_Interface.o
+OBJS += RS232C_UserInterface_Proc.o
+OBJS += Transmit.o
 
 TARGET  := libccr.so
 INCLUDE_PATH = -I./lua -I../logger -I../include
