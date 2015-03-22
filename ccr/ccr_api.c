@@ -31,12 +31,19 @@
 static callback_fn_t cb_ccr = NULL;
 static ccr_trackData_t theTrackData;
 
+
+static sem_t sem_cb; 
+
+
 pthread_once_t init_block = PTHREAD_ONCE_INIT;
 
 /*  Call back routine */
 
 void *ccr_callback_thread(void *arg) 
 {
+	/* binary sem wait */
+
+	sem_wait(&sem_cb);
 
 	(cb_ccr) (0, 0, (uint8_t *) & theTrackData, 0);
 	
@@ -47,7 +54,7 @@ void *ccr_callback_thread(void *arg)
 */
 void ccr_init_routine(void)
 {
-	
+	sem_init(&sem_cb,0,-1);  /* binary semaphore*/	
 }
 
 int ccr_callback_register(callback_fn_t callback)
