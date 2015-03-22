@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ccr" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ccr" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ccr" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="CRC_Proc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="CRC_Proc.h" />
+		<Unit filename="CardReaderManager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="CardReaderManager.h" />
+		<Unit filename="CollectLogEx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="CollectLogEx.h" />
+		<Unit filename="CollectLogExDef.h" />
+		<Unit filename="Command.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Command.h" />
+		<Unit filename="Connect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Connect.h" />
+		<Unit filename="DLE_EOT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DLE_EOT.h" />
+		<Unit filename="Disconnect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Disconnect.h" />
+		<Unit filename="FileProc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FileProc.h" />
+		<Unit filename="Makefile" />
+		<Unit filename="Makefile.back" />
+		<Unit filename="ProperDataDef.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ProperDataDef.h" />
+		<Unit filename="Prtcl_RS232C_8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Prtcl_RS232C_8.h" />
+		<Unit filename="Prtcl_RS232C_8_Def.h" />
+		<Unit filename="Prtcl_RS232C_8_FuncDef.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Prtcl_RS232C_8_FuncDef.h" />
+		<Unit filename="RS232C_Def.h" />
+		<Unit filename="RS232C_Interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="RS232C_Interface.h" />
+		<Unit filename="RS232C_InterfaceRevision.h" />
+		<Unit filename="RS232C_UserInterface_Proc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="RS232C_UserInterface_Proc.h" />
+		<Unit filename="Revision.h" />
+		<Unit filename="Transmit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Transmit.h" />
+		<Unit filename="cardrdrdatadefs.h" />
+		<Unit filename="cardreader.conf" />
+		<Unit filename="ccr.cbp" />
+		<Unit filename="ccrlog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ccrlog.h" />
+		<Unit filename="cmgrapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmgrapi.h" />
+		<Unit filename="config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="config.h" />
+		<Unit filename="crypto.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crypto.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
