@@ -10,7 +10,10 @@ CFLAGS += -mfloat-abi=softfp
 CFLAGS += -mcpu=arm9
 CFLAGS += -DSCU_BUILD
 CFLAGS += -g -DDEBUG
+
 endif
+
+CFLAGS += -g -DDEBUG
 
 
 
@@ -42,6 +45,9 @@ all:$(OBJS)
 clean:
 	@rm *.so *.o -rf
 
+.PHONY:exe
+exe:
+	$(CC) -o testccr testccr.c $(CFLAGS) -lrt
 .PHONY:intall
 install:
 	cp $(TARGET) /usr/scu/libs
